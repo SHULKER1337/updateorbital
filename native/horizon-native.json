@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "id": "orbital",
+  "version": "0.5.10",
+  "game": "26.3",
+  "horizon": "66f3981f522b24c250b21523a70080965b940424",
+  "mixins": "5a64af938ec86b00d53d16a408aabc0038fb3e57"
+}

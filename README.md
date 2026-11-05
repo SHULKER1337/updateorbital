@@ -7,6 +7,12 @@
 
 # Orbital Laser
 
+> **Updated native build:** this repository maintains the native port for Horizon Nightly
+> `66f3981f522b24c250b21523a70080965b940424` (2026-11-05), Minecraft Java 26.3.
+> Native sources are in [`native/`](native/). See the [Russian installation and build guide](docs/UPDATE-RU.md).
+> The original mod and its history are by [Stink-O](https://github.com/Stink-O/orbital-laser), under the MIT license.
+> The older fork/WASM instructions below describe the original project; use the native guide for this update.
+
 **An orbital laser strike, as a mod for [Horizon](https://github.com/ludovic111/horizon), the Rust rewrite of
 Minecraft Java.** Pick a laser from a wheel, hold the Orbital Laser Designator on a target, and a strike comes down from
 orbit. It digs a crater and a shaft to bedrock, flattens what stands round it and leaves the land changed for good.
@@ -59,7 +65,7 @@ orbit. It digs a crater and a shaft to bedrock, flattens what stands round it an
 
 1. Install the [Horizon launcher](https://playhorizon.dev) (0.2.37 or newer) and set up an instance from your own
    Minecraft Java Edition 26.3.
-2. Download **`orbital.hnmod`** from the [latest release](https://github.com/Stink-O/orbital-laser/releases/latest).
+2. Build **`orbital.hnmod`** with `python tools/build_native.py` (Python 3.11+). The file is written to `dist/orbital.hnmod`.
 3. Close the game. On the launcher's Instances page press **Open folder**, and put `orbital.hnmod` in the
    **`horizon-native-mods`** folder (make it if it isn't there).
 4. On the launcher's **Mods** page, check Orbital Laser is on.

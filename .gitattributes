@@ -1,0 +1,6 @@
+# Keep native source bytes identical when packaging on Windows and Linux.
+native/** text=auto eol=lf
+native/mixins/orbital/engine/data/gen/*.wgsl linguist-generated=true whitespace=-blank-at-eof
+tools/build_native.py text eol=lf
+tools/check_native_shaders.py text eol=lf
+tools/test_native_package.py text eol=lf
